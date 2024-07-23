@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-
+import NavComponent from "@/components/NavComponent";
 
 export const metadata: Metadata = {
   title: "Planet Fact Site",
@@ -14,7 +14,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <NavComponent/>
+        {children}
+        
+        </body>
     </html>
   );
 }
