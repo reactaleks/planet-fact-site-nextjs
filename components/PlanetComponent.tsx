@@ -19,7 +19,7 @@ export default function PlanetComponent({ planetData }: PlanetData) {
       <PlanetNavigationComponent
         pageSection={pageSection}
         setPageSection={setPageSection}
-
+        color={planetData.planetColour}
       />
 
       <PlanetImageComponent pageSection={pageSection} planetData={planetData} />

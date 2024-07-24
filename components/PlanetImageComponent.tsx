@@ -3,6 +3,8 @@ export default function PlanetImageComponent({
   planetData,
   pageSection,
 }: PlanetInformation) {
+  const imageSize = parseInt(planetData.radius.replace(/,/g, "").slice(0,2)) / 1 + '%'
+  console.log(imageSize)
   if (pageSection == "overview") {
     return (
       <>
@@ -12,7 +14,8 @@ export default function PlanetImageComponent({
           height={450}
           alt=""
           priority
-          className="w-[154px] h-[154px] mx-auto"
+          className={`w-[154px] h-[w-154px] mx-auto`}
+          style={{width: imageSize, height: imageSize}}
         />
       </>
     );
@@ -26,6 +29,7 @@ export default function PlanetImageComponent({
           alt=""
           priority
           className="w-[154px] h-[154px] mx-auto"
+          style={{width: imageSize, height: imageSize}}
         />
       </>
     );
@@ -40,6 +44,7 @@ export default function PlanetImageComponent({
             alt=""
             priority
             className="w-[154px] h-[154px] mx-auto"
+            style={{width: imageSize, height: imageSize}}
           />
           <Image
             src={planetData.surfaceGeologyImage}
