@@ -15,11 +15,11 @@ export default function PlanetComponent({ planetData }: PlanetData) {
   }, []);
 
   return (
-    <div className="min-h-full z-20 flex flex-col justify-around">
+    <div className="min-h-screen z-20 flex flex-col justify-around">
       <PlanetNavigationComponent
         pageSection={pageSection}
         setPageSection={setPageSection}
-
+        color={planetData.planetColour}
       />
 
       <PlanetImageComponent pageSection={pageSection} planetData={planetData} />

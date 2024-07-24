@@ -3,22 +3,24 @@ export default function PlanetImageComponent({
   planetData,
   pageSection,
 }: PlanetInformation) {
+  const imageSize = parseInt(planetData.radius.replace(/,/g, "").slice(0,2)) / 1 + '%'
   if (pageSection == "overview") {
     return (
-      <>
+      <div className="min-h-[258.7px] flex items-center justify-center">
         <Image
           src={planetData.overviewImage}
           width={450}
           height={450}
           alt=""
           priority
-          className="w-[154px] h-[154px] mx-auto"
+          className={`w-[154px] h-[154px] mx-auto`}
+          style={{width: imageSize, height: imageSize}}
         />
-      </>
+      </div>
     );
   } else if (pageSection == "internal") {
-    return (
-      <>
+    return ( 
+      <div className="min-h-[258.7px] flex items-center justify-center">
         <Image
           src={planetData.internalStructureImage}
           width={450}
@@ -26,13 +28,13 @@ export default function PlanetImageComponent({
           alt=""
           priority
           className="w-[154px] h-[154px] mx-auto"
+          style={{width: imageSize, height: imageSize}}
         />
-      </>
+      </div>
     );
   } else {
     return (
-      <>
-        <div className="relative">
+      <div className="min-h-[258.7px] flex items-center justify-center relative">
           <Image
             src={planetData.overviewImage}
             width={450}
@@ -40,6 +42,7 @@ export default function PlanetImageComponent({
             alt=""
             priority
             className="w-[154px] h-[154px] mx-auto"
+            style={{width: imageSize, height: imageSize}}
           />
           <Image
             src={planetData.surfaceGeologyImage}
@@ -47,10 +50,9 @@ export default function PlanetImageComponent({
             height={398}
             alt=""
             priority
-            className="w-[75px] h-[100px] left-0 right-0 mx-auto bottom-0 absolute"
+            className="w-[75px] h-[100px] absolute bottom-0"
           />
-        </div>
-      </>
+      </div>
     );
   }
 }
