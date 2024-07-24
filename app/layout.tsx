@@ -15,8 +15,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="bg-black">
-        <Image className="-z-10" src={'/assets/background-stars.svg'} alt="" fill style={{objectFit: 'cover'}}/>
+      <body className="bg-black max-h-screen">
+        <Image className="-z-10 relative" src={'/assets/background-stars.svg'} alt="" fill style={{objectFit: 'cover'}}/>
         <NavComponent/>
         {children}
         

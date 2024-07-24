@@ -7,11 +7,11 @@ export default function PlanetNavigationComponent({
   setPageSection,
 }: PropTypes) {
   return (
-    <div className="flex justify-around items-center h-[50px] border border-x-0 border-y-1 border-[#979797] border-opacity-35 z-20">
+    <div className="flex justify-around items-center h-[50px] border border-x-0 border-y-1 border-[#979797] border-opacity-35 z-19">
       <div
         className={`font-spartan text-[9px] text-white tracking-[1.93px] uppercase  h-full flex items-center ${
           pageSection == "overview"
-            ? "border border-x-0 border-t-0 border-b-4 border-yellow"
+            ? `border border-x-0 border-t-0 border-b-4 ` 
             : "border-none"
         } `}
         onClick={() => {
@@ -23,7 +23,7 @@ export default function PlanetNavigationComponent({
       <div
         className={`font-spartan text-[9px] text-white tracking-[1.93px] uppercase  h-full flex items-center ${
           pageSection == "internal"
-            ? "border border-x-0 border-t-0 border-b-4 border-yellow"
+            ? `border border-x-0 border-t-0 border-b-4`
             : "border-none"
         }`}
         onClick={() => {
@@ -35,7 +35,7 @@ export default function PlanetNavigationComponent({
       <div
         className={`font-spartan text-[9px] text-white tracking-[1.93px] uppercase  h-full flex items-center ${
           pageSection == "geology"
-            ? "border border-x-0 border-t-0 border-b-4 border-yellow"
+            ? `border border-x-0 border-t-0 border-b-4 `
             : "border-none"
         }`}
         onClick={() => {

@@ -12,6 +12,8 @@ interface PlanetData {
         radius: string;
         averageTemp: string;
         wikiLink: string;
+        planetColour: string;
+        [key:string]:string;
     }
 }
 

@@ -9,15 +9,17 @@ import PlanetStatsComponent from "./PlanetStatsComponent";
 
 export default function PlanetComponent({ planetData }: PlanetData) {
   const [pageSection, setPageSection] = useState("overview");
+  
   useEffect(() => {
     setPageSection("overview");
   }, []);
 
   return (
-    <div className="max-h-screen z-20">
+    <div className="min-h-full z-20 flex flex-col justify-around">
       <PlanetNavigationComponent
         pageSection={pageSection}
         setPageSection={setPageSection}
+
       />
 
       <PlanetImageComponent pageSection={pageSection} planetData={planetData} />

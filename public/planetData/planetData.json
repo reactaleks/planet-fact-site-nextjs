@@ -11,7 +11,8 @@
         "revolutionTime": "365.25 Days",
         "radius": "6,371",
         "averageTemp": "16 ",
-        "wikiLink": "https://en.wikipedia.org/wiki/Earth"
+        "wikiLink": "https://en.wikipedia.org/wiki/Earth",
+        "planetColour": "#6D2ED5"
     },
     "mars": {
         "planetName": "Mars",
@@ -25,7 +26,9 @@
         "revolutionTime": "1.88 Years",
         "radius": "3,389.5",
         "averageTemp": "-28 ",
-        "wikiLink": "https://en.wikipedia.org/wiki/Mars"
+        "wikiLink": "https://en.wikipedia.org/wiki/Mars",
+        "planetColour": "#D14C32"
+
     },
     "jupiter": {
         "planetName": "Jupiter",
@@ -39,7 +42,9 @@
         "revolutionTime": "11.86 Years",
         "radius": "69,911",
         "averageTemp": "-28",
-        "wikiLink": "https://en.wikipedia.org/wiki/Jupiter"
+        "wikiLink": "https://en.wikipedia.org/wiki/Jupiter",
+        "planetColour": "#D83A34"
+
     },
     "saturn": {
         "planetName": "Saturn",
@@ -53,7 +58,8 @@
         "revolutionTime": "29.46 Years",
         "radius": "58,232", 
         "averageTemp": "-138 ",
-        "wikiLink": "https://en.wikipedia.org/wiki/Saturn"
+        "wikiLink": "https://en.wikipedia.org/wiki/Saturn",
+        "planetColour": "#CD5120"
     },
     "uranus": {
         "planetName": "Uranus",
@@ -67,7 +73,9 @@
         "revolutionTime": "84 Years",
         "radius": "25,362",
         "averageTemp": "--195",
-        "wikiLink": "https://en.wikipedia.org/wiki/Uranus"
+        "wikiLink": "https://en.wikipedia.org/wiki/Uranus",
+        "planetColour": "#1EC1A2"
+
     },
     "neptune": {
         "planetName": "Neptune",
@@ -81,7 +89,8 @@
         "revolutionTime": "164.79 Years",
         "radius": "24,622",
         "averageTemp": "-201 ",
-        "wikiLink": "https://en.wikipedia.org/wiki/Neptune"
+        "wikiLink": "https://en.wikipedia.org/wiki/Neptune",
+        "planetColour": "#2D68F0"
     },
     "venus": {
         "planetName": "Venus",
@@ -95,7 +104,9 @@
         "revolutionTime": "224.7 Days",
         "radius": "6051.8",
         "averageTemp": "471",
-        "wikiLink": "https://en.wikipedia.org/wiki/Venus"
+        "wikiLink": "https://en.wikipedia.org/wiki/Venus",
+        "planetColour": "#EDA249"
+
     },
     "mercury": {
         "planetName": "Mercury ",
@@ -109,6 +120,8 @@
         "revolutionTime": "87.97 Days",
         "radius": "2,439.7",
         "averageTemp": "430",
-        "wikiLink": "https://en.wikipedia.org/wiki/Mercury_(planet)"
+        "wikiLink": "https://en.wikipedia.org/wiki/Mercury_(planet)",
+        "planetColour": "#419EBB"
+
     }
 }
