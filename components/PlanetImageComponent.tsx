@@ -1,5 +1,5 @@
 import Image from "next/image";
-export default function PlanetInformationComponent({
+export default function PlanetImageComponent({
   planetData,
   pageSection,
 }: PlanetInformation) {
@@ -12,8 +12,8 @@ export default function PlanetInformationComponent({
           height={450}
           alt=""
           priority
+          className="w-[154px] h-[154px] mx-auto"
         />
-        <p>{planetData.overviewContent}</p>
       </>
     );
   } else if (pageSection == "internal") {
@@ -25,8 +25,8 @@ export default function PlanetInformationComponent({
           height={450}
           alt=""
           priority
+          className="w-[154px] h-[154px] mx-auto"
         />
-        <p>{planetData.internalStructureContent}</p>
       </>
     );
   } else {
@@ -39,7 +39,7 @@ export default function PlanetInformationComponent({
             height={450}
             alt=""
             priority
-            className=""
+            className="w-[154px] h-[154px] mx-auto"
           />
           <Image
             src={planetData.surfaceGeologyImage}
@@ -47,10 +47,9 @@ export default function PlanetInformationComponent({
             height={398}
             alt=""
             priority
-            className="right-0 left-0 top-0 bottom-0 absolute"
+            className="w-[75px] h-[100px] left-0 right-0 mx-auto bottom-0 absolute"
           />
         </div>
-        <p>{planetData.surfaceGeology}</p>
       </>
     );
   }

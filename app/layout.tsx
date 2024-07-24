@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Image from "next/image";
 import NavComponent from "@/components/NavComponent";
 
 export const metadata: Metadata = {
@@ -14,7 +15,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body className="bg-black">
+        <Image className="-z-10" src={'/assets/background-stars.svg'} alt="" fill style={{objectFit: 'cover'}}/>
         <NavComponent/>
         {children}
         
