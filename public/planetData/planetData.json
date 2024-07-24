@@ -7,10 +7,11 @@
         "overviewImage": "/assets/planet-earth.svg",
         "internalStructureImage": "/assets/planet-earth-internal.svg",
         "surfaceGeologyImage": "/assets/geology-earth.png",
-        "rotationTime": "0.99",
-        "revolutionTime": "365.25",
+        "rotationTime": "0.99 Days",
+        "revolutionTime": "365.25 Days",
         "radius": "6,371",
-        "averageTemp": "16"
+        "averageTemp": "16 ",
+        "wikiLink": "https://en.wikipedia.org/wiki/Earth"
     },
     "mars": {
         "planetName": "Mars",
@@ -20,10 +21,11 @@
         "overviewImage": "/assets/planet-mars.svg",
         "internalStructureImage": "/assets/planet-mars-internal.svg",
         "surfaceGeologyImage": "/assets/geology-mars.png",
-        "rotationTime": "1.03", 
-        "revolutionTime": "1.88",
+        "rotationTime": "1.03 Days", 
+        "revolutionTime": "1.88 Years",
         "radius": "3,389.5",
-        "averageTemp": "-28"
+        "averageTemp": "-28 ",
+        "wikiLink": "https://en.wikipedia.org/wiki/Mars"
     },
     "jupiter": {
         "planetName": "Jupiter",
@@ -33,10 +35,11 @@
         "overviewImage": "/assets/planet-jupiter.svg",
         "internalStructureImage": "/assets/planet-jupiter-internal.svg",
         "surfaceGeologyImage": "/assets/geology-jupiter.png",
-        "rotationTime": "9.93", 
-        "revolutionTime": "11.86",
+        "rotationTime": "9.93 Hours", 
+        "revolutionTime": "11.86 Years",
         "radius": "69,911",
-        "averageTemp": "-28"
+        "averageTemp": "-28",
+        "wikiLink": "https://en.wikipedia.org/wiki/Jupiter"
     },
     "saturn": {
         "planetName": "Saturn",
@@ -46,10 +49,11 @@
         "overviewImage": "/assets/planet-saturn.svg",
         "internalStructureImage": "/assets/planet-saturn-internal.svg",
         "surfaceGeologyImage": "/assets/geology-saturn.png",
-        "rotationTime": "10.8", 
-        "revolutionTime": "29.46",
-        "radius": "58,232",
-        "averageTemp": "-138"
+        "rotationTime": "10.8 Hours", 
+        "revolutionTime": "29.46 Years",
+        "radius": "58,232", 
+        "averageTemp": "-138 ",
+        "wikiLink": "https://en.wikipedia.org/wiki/Saturn"
     },
     "uranus": {
         "planetName": "Uranus",
@@ -59,10 +63,11 @@
         "overviewImage": "/assets/planet-uranus.svg",
         "internalStructureImage": "/assets/planet-uranus-internal.svg",
         "surfaceGeologyImage": "/assets/geology-uranus.png",
-        "rotationTime": "17.2", 
-        "revolutionTime": "84",
+        "rotationTime": "17.2 Hours", 
+        "revolutionTime": "84 Years",
         "radius": "25,362",
-        "averageTemp": "--195"
+        "averageTemp": "--195",
+        "wikiLink": "https://en.wikipedia.org/wiki/Uranus"
     },
     "neptune": {
         "planetName": "Neptune",
@@ -72,10 +77,11 @@
         "overviewImage": "/assets/planet-neptune.svg",
         "internalStructureImage": "/assets/planet-neptune-internal.svg",
         "surfaceGeologyImage": "/assets/geology-neptune.png",
-        "rotationTime": "16.08", 
-        "revolutionTime": "164.79",
+        "rotationTime": "16.08 Hours", 
+        "revolutionTime": "164.79 Years",
         "radius": "24,622",
-        "averageTemp": "-201"
+        "averageTemp": "-201 ",
+        "wikiLink": "https://en.wikipedia.org/wiki/Neptune"
     },
     "venus": {
         "planetName": "Venus",
@@ -85,10 +91,11 @@
         "overviewImage": "/assets/planet-venus.svg",
         "internalStructureImage": "/assets/planet-venus-internal.svg",
         "surfaceGeologyImage": "/assets/geology-venus.png",
-        "rotationTime": "243", 
-        "revolutionTime": "224.7",
+        "rotationTime": "243 Days", 
+        "revolutionTime": "224.7 Days",
         "radius": "6051.8",
-        "averageTemp": "471"
+        "averageTemp": "471",
+        "wikiLink": "https://en.wikipedia.org/wiki/Venus"
     },
     "mercury": {
         "planetName": "Mercury ",
@@ -98,9 +105,10 @@
         "overviewImage": "/assets/planet-mercury.svg",
         "internalStructureImage": "/assets/planet-mercury-internal.svg",
         "surfaceGeologyImage": "/assets/geology-mercury.png",
-        "rotationTime": "58.6", 
-        "revolutionTime": "87.97",
+        "rotationTime": "58.6 Days", 
+        "revolutionTime": "87.97 Days",
         "radius": "2,439.7",
-        "averageTemp": "430 "
+        "averageTemp": "430",
+        "wikiLink": "https://en.wikipedia.org/wiki/Mercury_(planet)"
     }
 }

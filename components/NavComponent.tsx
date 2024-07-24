@@ -44,7 +44,7 @@ export default function NavComponent() {
 
       </button>
       <div
-        className={`w-full h-screen transform left-0 top-0 ease-in-out absolute transition-all duration-500 z-0  ${
+        className={`w-full h-screen transform left-0 top-0 ease-in-out absolute transition-all duration-500 z-20  ${
           menuOpen
             ? " bg-black text-white flex flex-col justify-center translate-y-0"
             : "-translate-y-full"

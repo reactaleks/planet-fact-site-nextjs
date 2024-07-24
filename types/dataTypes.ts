@@ -11,6 +11,7 @@ interface PlanetData {
         revolutionTime: string;
         radius: string;
         averageTemp: string;
+        wikiLink: string;
     }
 }
 

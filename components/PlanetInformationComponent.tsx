@@ -32,13 +32,14 @@ export default function PlanetInformationComponent({
   } else {
     return (
       <>
-        <div className="relative w-[450px] h-[450px]">
+        <div className="relative">
           <Image
             src={planetData.overviewImage}
             width={450}
             height={450}
             alt=""
             priority
+            className=""
           />
           <Image
             src={planetData.surfaceGeologyImage}
@@ -46,7 +47,7 @@ export default function PlanetInformationComponent({
             height={398}
             alt=""
             priority
-            className="absolute right-0 left-0 top-0 bottom-0"
+            className="right-0 left-0 top-0 bottom-0 absolute"
           />
         </div>
         <p>{planetData.surfaceGeology}</p>
