@@ -1,30 +1,31 @@
+
+
 export default function PlanetDescriptionComponent({
   planetData,
   pageSection,
 }: PlanetInformation) {
-  if (pageSection == "overview") {
+
+  interface SectionData {
+    overview:string;
+    internal:string;
+    geology:string;
+    [key:string]:string;
+  }
+
+  const sectionData:SectionData = {
+      "overview": planetData.overviewContent,
+      "internal": planetData.internalStructureContent,
+      "geology": planetData.surfaceGeology,
+  };
+
+  if (sectionData.hasOwnProperty(pageSection)) {
+    const index = pageSection
+    const content = sectionData[index]
+
     return (
-      <>
-        <p className="text-white w-[90%] mx-auto text-center">
-          {planetData.overviewContent}
-        </p>
-      </>
-    );
-  } else if (pageSection == "internal") {
-    return (
-      <>
-        <p className="text-white w-[90%] mx-auto text-center">
-          {planetData.internalStructureContent}
-        </p>
-      </>
-    );
-  } else {
-    return (
-      <>
-        <p className="text-white w-[90%] mx-auto text-center">
-          {planetData.surfaceGeology}
-        </p>
-      </>
+      <p className="text-white w-[90%] mx-auto text-center">
+        {content}
+      </p>
     );
   }
 }
