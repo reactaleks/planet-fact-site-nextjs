@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-
+import Image from "next/image";
+import NavComponent from "@/components/NavComponent";
 
 export const metadata: Metadata = {
   title: "Planet Fact Site",
@@ -14,7 +15,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className="bg-black max-h-screen">
+        <Image className="-z-10 relative" src={'/assets/background-stars.svg'} alt="" fill style={{objectFit: 'cover'}}/>
+        <NavComponent/>
+        {children}
+        
+        </body>
     </html>
   );
 }
