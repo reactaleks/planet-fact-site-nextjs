@@ -34,7 +34,7 @@ export default function PlanetImageComponent({
     );
   } else {
     return (
-      <div className="min-h-[258.7px] flex items-center justify-center ">
+      <div className="min-h-[258.7px] flex items-center justify-center relative">
           <Image
             src={planetData.overviewImage}
             width={450}
@@ -50,7 +50,7 @@ export default function PlanetImageComponent({
             height={398}
             alt=""
             priority
-            className="w-[75px] h-[100px] absolute"
+            className="w-[75px] h-[100px] absolute bottom-0"
           />
       </div>
     );
