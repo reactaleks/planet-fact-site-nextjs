@@ -23,7 +23,9 @@ export default function PlanetDescriptionComponent({
     const content = sectionData[index]
 
     return (
-      <p className="min-h-[110px] text-white w-[75%] mx-auto text-center font-spartan font-normal text-[11px] leading-[22px] tracking-[0px]">
+      <p className="min-h-[110px] text-white w-[75%] mx-auto text-center font-spartan font-normal text-[11px] leading-[22px] tracking-[0px]
+      col-span-6 row-start-7 md:text-start
+      ">
         {content}
       </p>
     );

@@ -3,7 +3,9 @@ interface PropTypes {
 }
 export default function PlanetWikiLink({ wikiLink }: PropTypes) {
   return (
-    <div className="text-white  font-spartan w-[110px] mx-auto flex justify-between font-normal text-[12px] text-opacity-50 border border-b-1 border-x-0 border-t-0">
+    <div className="text-white  font-spartan w-[110px] mx-auto flex 
+    justify-between font-normal text-[12px] text-opacity-50 border border-b-1 border-x-0 border-t-0 
+    row-start-9 row-span-1 col-span-6 md:h-[25px] md:w-[25%] md:ml-14">
       <div className="">
         Source:
 

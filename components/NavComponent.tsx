@@ -1,11 +1,13 @@
 "use client";
 import planetData from "../public/planetData/planetData.json";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import Link from "next/link";
 
 export default function NavComponent() {
   const [menuOpen, setMenuOpen] = useState(false);
+
+  useEffect(() => {setMenuOpen(false)}, [])
 
   const openMenu = () => {
     setMenuOpen(!menuOpen);

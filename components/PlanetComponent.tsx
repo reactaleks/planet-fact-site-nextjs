@@ -15,7 +15,7 @@ export default function PlanetComponent({ planetData }: PlanetData) {
   }, []);
 
   return (
-    <div className="min-h-screen z-20 flex flex-col justify-around">
+    <div className="min-h-screen z-20 flex flex-col justify-around md:grid md:grid-cols-12 md:grid-rows-12 md:max-h-screen">
       <PlanetNavigationComponent
         pageSection={pageSection}
         setPageSection={setPageSection}
