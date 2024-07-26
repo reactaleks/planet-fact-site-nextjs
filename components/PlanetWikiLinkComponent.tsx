@@ -3,12 +3,17 @@ interface PropTypes {
 }
 export default function PlanetWikiLink({ wikiLink }: PropTypes) {
   return (
-    <div className="text-white  font-spartan w-[110px] mx-auto flex justify-between font-normal text-[12px] text-opacity-50 border border-b-1 border-x-0 border-t-0">
+    <div className="text-white  font-spartan w-[110px] mx-auto flex 
+    justify-between font-normal text-[12px] text-opacity-50 border border-b-1 border-x-0 border-t-0 
+    row-start-9 row-span-1 col-span-6 
+    md:h-[25px] md:col-span-2 md:col-start-2 md:w-auto
+    xl:col-start-9 xl:row-start-6 xl:ml-0
+    ">
       <div className="">
         Source:
 
       </div>
-      <a href={wikiLink} target="_blank" className="font-bold ml-1">
+      <a href={wikiLink} target="_blank" className="ml-1 font-bold">
         Wikipedia
       </a>
       <div className="ml-1">
