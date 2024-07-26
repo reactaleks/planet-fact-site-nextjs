@@ -3,45 +3,46 @@ export default function PlanetImageComponent({
   planetData,
   pageSection,
 }: PlanetInformation) {
-  const imageSize = parseInt(planetData.radius.replace(/,/g, "").slice(0,2)) / 1 + '%'
+  const imageSize = 450 * parseInt(planetData.radius.replace(/,/g, "").slice(0,2)) / 100 + 'px'
+  console.log(imageSize)
   if (pageSection == "overview") {
     return (
-      <div className="min-h-[258.7px] flex items-center justify-center col-span-8 row-span-6 col-start-3 row-start-1">
+      <div className="flex items-center justify-center col-span-8 col-start-3 row-span-6 row-start-1 md:col-span-4 md:col-start-5 md:row-start-1 md:row-span-5 xl:col-span-4 xl:col-start-3 xl:row-start-3">
         <Image
           src={planetData.overviewImage}
           width={450}
           height={450}
           alt=""
           priority
-          className={`w-[154px] h-[154px] mx-auto md:w-[213px] md:h-[213px]`}
+          className={`min-w-[111px] min-h-[111px] mx-auto md:min-w-[184px] md:min-h-[184px] xl:w-[336px] xl:h-[336px]`}
           style={{width: imageSize, height: imageSize}}
         />
       </div>
     );
   } else if (pageSection == "internal") {
     return ( 
-      <div className="min-h-[258.7px] flex items-center justify-center col-span-8 row-span-6 col-start-3 row-start-1">
+      <div className="flex items-center justify-center col-span-8 col-start-3 row-span-6 row-start-1 md:col-span-4 md:col-start-5 md:row-start-1 md:row-span-5 xl:col-span-4 xl:col-start-3 xl:row-start-3">
         <Image
           src={planetData.internalStructureImage}
           width={450}
           height={450}
           alt=""
           priority
-          className="w-[154px] h-[154px] mx-auto md:w-[213px] md:h-[213px]"
+          className="min-w-[111px] min-h-[111px] mx-auto md:min-w-[184px] md:min-h-[184px]"
           style={{width: imageSize, height: imageSize}}
         />
       </div>
     );
   } else {
     return (
-      <div className="min-h-[258.7px] flex items-center justify-center relative col-span-8 row-span-6 col-start-3 row-start-1">
+      <div className="relative flex items-center justify-center col-span-8 col-start-3 row-span-6 row-start-1 md:col-span-4 md:col-start-5 md:row-start-1 md:row-span-5 xl:col-span-4 xl:col-start-3 xl:row-start-3">
           <Image
             src={planetData.overviewImage}
             width={450}
             height={450}
             alt=""
             priority
-            className="w-[154px] h-[154px] mx-auto md:w-[213px] md:h-[213px]"
+            className="min-w-[111px] min-h-[111px] mx-auto md:min-w-[184px] md:min-h-[184px]"
             style={{width: imageSize, height: imageSize}}
           />
           <Image

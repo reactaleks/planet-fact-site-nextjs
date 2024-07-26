@@ -9,7 +9,10 @@ export default function Page({ params }: { params: { slug: string } }) {
 
   if (Object.keys(dataSet).includes(planet)) {
     return (
-        <PlanetComponent planetData={currentPlanetData}/>
+        <main className="xl:w-[90%] xl:mx-auto">
+            <PlanetComponent planetData={currentPlanetData}/>
+
+        </main>
     );
   } else {
     notFound();

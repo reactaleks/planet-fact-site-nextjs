@@ -50,7 +50,7 @@ export default function NavComponent() {
   });
 
   return (
-    <nav className="w-full flex justify-between items-center p-5 md:flex-col">
+    <nav className="w-full flex justify-between items-center p-5 md:flex-col xl:flex-row">
       <div className="font-antonio text-[28px] tracking-[-1.05px] uppercase text-white z-[21] md:w-[20%]">
         the planets
       </div>
