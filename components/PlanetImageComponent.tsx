@@ -4,7 +4,6 @@ export default function PlanetImageComponent({
   pageSection,
 }: PlanetInformation) {
   const imageSize = 450 * parseInt(planetData.radius.replace(/,/g, "").slice(0,2)) / 100 + 'px'
-  console.log(imageSize)
   if (pageSection == "overview") {
     return (
       <div className="flex items-center justify-center col-span-8 col-start-3 row-span-6 row-start-1 md:col-span-4 md:col-start-5 md:row-start-1 md:row-span-5 xl:col-span-4 xl:col-start-3 xl:row-start-3">

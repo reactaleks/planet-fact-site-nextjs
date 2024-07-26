@@ -12,7 +12,10 @@
         "radius": "6,371",
         "averageTemp": "16 ",
         "wikiLink": "https://en.wikipedia.org/wiki/Earth",
-        "planetColour": "#6D2ED5"
+        "planetColour": {
+            "border": "border-[#6D2ED5]",
+            "background": "bg-[#6D2ED5]"  
+        }
     },
     "mars": {
         "planetName": "Mars",
