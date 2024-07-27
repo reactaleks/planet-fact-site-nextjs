@@ -24,14 +24,14 @@ export default function PlanetNavigationComponent({
 }: PropTypes) {
 
   const colors = {
-    'earth': `md:hover:bg-planetColors-earth`,
-    'mars': 'md:hover:bg-planetColors-mars',
-    'jupiter': 'md:hover:bg-planetColors-jupiter',
-    'saturn': 'md:hover:bg-planetColors-saturn',
-    'uranus': 'md:hover:bg-planetColors-uranus',
-    'neptune': 'md:hover:bg-planetColors-neptune',
-    'venus': 'md:hover:bg-planetColors-venus',
-    'mercury': 'md:hover:bg-planetColors-mercury',
+    'earth': `border-planetColors-earth md:bg-planetColors-earth`,
+    'mars': 'border-planetColors-mars md:bg-planetColors-mars',
+    'jupiter': 'border-planetColors-jupiter md:bg-planetColors-jupiter',
+    'saturn': 'border-planetColors-saturn md:bg-planetColors-saturn',
+    'uranus': 'border-planetColors-uranus md:bg-planetColors-uranus',
+    'neptune': 'border-planetColors-neptune md:bg-planetColors-neptune',
+    'venus': 'border-planetColors-venus md:bg-planetColors-venus',
+    'mercury': 'border-planetColors-mercury md:bg-planetColors-mercury',
   } as PlanetColors
 
   const planetNavItems = ['overview', 'internal', 'geology']
@@ -40,7 +40,8 @@ export default function PlanetNavigationComponent({
       <div
       key={key}
       className={`planetNavItem font-spartan text-[9px] text-white tracking-[1.93px] uppercase  h-full flex items-center  
-        md:w-[281px] md:h-[40px] md:border-1 md:border-[#979797] md:text-[9px] ${colors.hasOwnProperty(planet) ? colors[planet] : ''} md:hover:bg-opacity-100
+        border border-b-4 border-t-0 border-x-0 md:border-b-0 md:border-1
+        md:w-[281px] md:h-[40px] md:border-1 md:border-[#979797] md:text-[9px] ${pageSection == item && colors.hasOwnProperty(planet) ? colors[planet] : 'border-transparent '} md:hover:bg-white md:hover:bg-opacity-50
         xl:w-full xl:text-[18px]  xl:h-[48px] xl:px-5 cursor-pointer`}
       onClick={() => {
         setPageSection(item);
