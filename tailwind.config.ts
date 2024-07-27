@@ -18,20 +18,7 @@ const config: Config = {
       headingxs: '11px',
       body: '14px'
     },
-    colors: {
-      white: '#FFFFFF',
-      black: '#070724',
-      darkgray: '#38384F',
-      gray: '#838391',
-      teal: '#419EBB',
-      yellow: '#EDA249',
-      purple: '#6F2ED6',
-      lightred: '#D14C32',
-      red: '#D83A34',
-      orange: '#CD4120',
-      green: '#1EC2A4',
-      blue: '#2D68F0'
-    },
+
     extend: {
       gridTemplateColumns: {
         '24': 'repeat(24, 1fr)'
@@ -95,7 +82,32 @@ const config: Config = {
         '22': '22',
         '23': '23',
         '24': '24',
-      }
+      },
+      colors: {
+        white: '#FFFFFF',
+        black: '#070724',
+        darkgray: '#38384F',
+        gray: '#838391',
+        teal: '#419EBB',
+        yellow: '#EDA249',
+        purple: '#6F2ED6',
+        lightred: '#D14C32',
+        red: '#D83A34',
+        orange: '#CD4120',
+        green: '#1EC2A4',
+        blue: '#2D68F0',
+        planetColors: {
+          earth: '#6D2ED5',
+          mars: '#D14C32',
+          jupiter: '#D83A34',
+          saturn: '#CD5120',
+          uranus: '#1EC1A2',
+          neptune: '#2D68F0',
+          venus: '#EDA249',
+          mercury: '#419EBB'
+        }
+      },
+
     },
   },
   plugins: [],
