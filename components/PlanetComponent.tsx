@@ -19,7 +19,7 @@ export default function PlanetComponent({ planetData }: PlanetData) {
       <PlanetNavigationComponent
         pageSection={pageSection}
         setPageSection={setPageSection}
-        planet={planetData.planetName}
+        planet={planetData.planetName.toLowerCase()}
       />
 
       <PlanetImageComponent pageSection={pageSection} planetData={planetData} />
