@@ -16,6 +16,18 @@ interface PlanetData {
     }
 }
 
+interface PlanetColors {
+    [key: string]: string | string[];
+    earth: string[];
+    mars: string[];
+    jupiter: string[];
+    saturn: string[];
+    uranus: string[];
+    neptune: string[];
+    venus: string[];
+    mercury: string[];
+  }
+
 interface PlanetInformation extends PlanetData {
     pageSection: string;
 }

@@ -17,13 +17,26 @@ export default function NavComponent() {
 
   const navItems = Object.keys(planetData).map((key) => {
     let planet = key as keyof typeof planetData;
+
+    const colors = {
+      'earth': [`border-planetColors-earth`, `bg-planetcolors-earth`, `#6D2ED5`],
+      'mars': [`border-planetColors-mars`, `bg-planetcolors-mars`, `#D14C32`],
+      'jupiter': [`border-planetColors-jupiter`, `bg-planetcolors-jupiter`, `#D83A34`],
+      'saturn': [`border-planetColors-saturn`, `bg-planetcolors-saturn`, `#CD5120`],
+      'neptune': [`border-planetColors-neptune`, `bg-planetcolors-neptune`, `#1EC1A2`],
+      'uranus': [`border-planetColors-neptune`, `bg-planetcolors-neptune`, `#2D68F0`],
+      'venus': [`border-planetColors-venus`, `bg-planetcolors-venus`, `#EDA249`],
+      'mercury': [`border-planetColors-mercury`, `bg-planetcolors-mercury`, `#419EBB`],
+
+    } as PlanetColors
+    
     return (
       <Link
         key={key}
         href={`/${key}`}
         onClick={openMenu}
         className={`uppercase cursor-pointer flex items-center w-full h-[65px] mx-auto 
-          border border-x-0 border-t-0 border-b-1 border-white border-opacity-25 
+          border border-x-0 border-t-0 border-b-1  border-opacity-25
           md:justify-center md:border-none `}
       >
         <div className="w-[10%] md:hidden">
@@ -38,14 +51,14 @@ export default function NavComponent() {
               cx="10"
               cy="10"
               r="10"
-              fill={`${planetData[planet].planetColour}`}
+              fill={colors[key.toLowerCase()][2]}
             />
           </svg>
         </div>
         <div
           // style={{ borderColor: `${planetData[planet].planetColour}`}}
           className={`w-[80%] font-spartan text-[15px] font-bold leading-[25px] tracking-[1.36px] md:opacity-50 
-        xl:h-full hover:xl:border-t-4 hover:xl:opacity-100 xl:[&:not(:hover)]:border-transparent xl:[&:not(:hover)]:border-t-4  xl:flex xl:justify-center xl:items-center xl:w-full`}
+        xl:h-full hover:xl:border-t-4 hover:xl:opacity-100 ${colors[key.toLowerCase()][0]}  xl:flex xl:justify-center xl:items-center xl:w-full`}
         >
           {key}
         </div>
