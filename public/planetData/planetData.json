@@ -9,8 +9,8 @@
         "surfaceGeologyImage": "/assets/geology-earth.png",
         "rotationTime": "0.99 Days",
         "revolutionTime": "365.25 Days",
-        "radius": "6,371",
-        "averageTemp": "16 ",
+        "radius": "6,371 KM",
+        "averageTemp": "16 °C",
         "wikiLink": "https://en.wikipedia.org/wiki/Earth"
     },
     "mars": {
@@ -23,8 +23,8 @@
         "surfaceGeologyImage": "/assets/geology-mars.png",
         "rotationTime": "1.03 Days", 
         "revolutionTime": "1.88 Years",
-        "radius": "3,389.5",
-        "averageTemp": "-28 ",
+        "radius": "3,389.5 KM",
+        "averageTemp": "-28 °C",
         "wikiLink": "https://en.wikipedia.org/wiki/Mars"
 
     },
@@ -38,8 +38,8 @@
         "surfaceGeologyImage": "/assets/geology-jupiter.png",
         "rotationTime": "9.93 Hours", 
         "revolutionTime": "11.86 Years",
-        "radius": "69,911",
-        "averageTemp": "-28",
+        "radius": "69,911 KM",
+        "averageTemp": "-28 °C",
         "wikiLink": "https://en.wikipedia.org/wiki/Jupiter"
 
     },
@@ -53,8 +53,8 @@
         "surfaceGeologyImage": "/assets/geology-saturn.png",
         "rotationTime": "10.8 Hours", 
         "revolutionTime": "29.46 Years",
-        "radius": "58,232", 
-        "averageTemp": "-138 ",
+        "radius": "58,232 KM", 
+        "averageTemp": "-138 °C",
         "wikiLink": "https://en.wikipedia.org/wiki/Saturn"
     },
     "uranus": {
@@ -67,8 +67,8 @@
         "surfaceGeologyImage": "/assets/geology-uranus.png",
         "rotationTime": "17.2 Hours", 
         "revolutionTime": "84 Years",
-        "radius": "25,362",
-        "averageTemp": "--195",
+        "radius": "25,362 KM",
+        "averageTemp": "-195 °C",
         "wikiLink": "https://en.wikipedia.org/wiki/Uranus"
 
     },
@@ -82,8 +82,8 @@
         "surfaceGeologyImage": "/assets/geology-neptune.png",
         "rotationTime": "16.08 Hours", 
         "revolutionTime": "164.79 Years",
-        "radius": "24,622",
-        "averageTemp": "-201 ",
+        "radius": "24,622 KM",
+        "averageTemp": "-201 °C",
         "wikiLink": "https://en.wikipedia.org/wiki/Neptune"
     },
     "venus": {
@@ -96,8 +96,8 @@
         "surfaceGeologyImage": "/assets/geology-venus.png",
         "rotationTime": "243 Days", 
         "revolutionTime": "224.7 Days",
-        "radius": "6051.8",
-        "averageTemp": "471",
+        "radius": "6051.8 KM",
+        "averageTemp": "471 °C",
         "wikiLink": "https://en.wikipedia.org/wiki/Venus"
 
     },
@@ -111,8 +111,8 @@
         "surfaceGeologyImage": "/assets/geology-mercury.png",
         "rotationTime": "58.6 Days", 
         "revolutionTime": "87.97 Days",
-        "radius": "2,439.7",
-        "averageTemp": "430",
+        "radius": "2,439.7 KM",
+        "averageTemp": "430 °C",
         "wikiLink": "https://en.wikipedia.org/wiki/Mercury_(planet)"
 
     }

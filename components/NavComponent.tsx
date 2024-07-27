@@ -16,7 +16,6 @@ export default function NavComponent() {
   };
 
   const navItems = Object.keys(planetData).map((key) => {
-    let planet = key as keyof typeof planetData;
 
     const colors = {
       'earth': [`border-planetColors-earth`, `bg-planetcolors-earth`, `#6D2ED5`],
@@ -27,7 +26,6 @@ export default function NavComponent() {
       'uranus': [`border-planetColors-neptune`, `bg-planetcolors-neptune`, `#2D68F0`],
       'venus': [`border-planetColors-venus`, `bg-planetcolors-venus`, `#EDA249`],
       'mercury': [`border-planetColors-mercury`, `bg-planetcolors-mercury`, `#419EBB`],
-
     } as PlanetColors
     
     return (
