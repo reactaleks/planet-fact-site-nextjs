@@ -35,7 +35,7 @@ export default function PlanetNavigationComponent({
         setPageSection(item);
       }}
     >
-      <span className="hidden md:block xl:opacity-50 xl:mr-5">0{key + 1}&nbsp;</span> {item}
+      <span className="hidden md:block md:opacity-50 xl:mr-5">0{key + 1}&nbsp;</span> {item}
     </div>
   )
 
