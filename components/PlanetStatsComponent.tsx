@@ -17,9 +17,9 @@ export default function PlanetStatsComponent({
       border border-1 border-[#979797] border-opacity-35 px-5
       w-full h-[48px] 
       md:flex-col md:w-[24%] md:h-[88px] md:justify-around md:items-start
-      xl:text-[11px] xl:h-[128px] xl:justify-evenly">
+      xl:text-[11px] xl:h-[128px] xl:justify-center">
         <span style={{ opacity: "50%" }} className="">{item[0]}</span>
-        <span className=" font-antonio text-[24px] xl:text-[40px] font-medium">
+        <span className=" font-antonio text-[24px] xl:text-[40px] font-medium xl:mt-2">
           {item[1]}
         </span>
       </div>

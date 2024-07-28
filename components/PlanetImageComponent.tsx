@@ -13,7 +13,7 @@ export default function PlanetImageComponent({
           height={450}
           alt=""
           priority
-          className={`min-w-[111px] min-h-[111px] mx-auto md:min-w-[184px] md:min-h-[184px] xl:w-[336px] xl:h-[336px]`}
+          className={`min-w-[111px] min-h-[111px] mx-auto md:min-w-[184px] md:min-h-[184px] xl:min-h-[500px] xl:min-w-[500px] `}
           style={{width: imageSize, height: imageSize}}
         />
       </div>
@@ -27,7 +27,7 @@ export default function PlanetImageComponent({
           height={450}
           alt=""
           priority
-          className="min-w-[111px] min-h-[111px] mx-auto md:min-w-[184px] md:min-h-[184px]"
+          className="min-w-[111px] min-h-[111px] mx-auto md:min-w-[184px] md:min-h-[184px] xl:min-h-[500px] xl:min-w-[500px]"
           style={{width: imageSize, height: imageSize}}
         />
       </div>
@@ -41,7 +41,7 @@ export default function PlanetImageComponent({
             height={450}
             alt=""
             priority
-            className="min-w-[111px] min-h-[111px] mx-auto md:min-w-[184px] md:min-h-[184px]"
+            className="min-w-[111px] min-h-[111px] mx-auto md:min-w-[184px] md:min-h-[184px] xl:min-h-[500px] xl:min-w-[500px]"
             style={{width: imageSize, height: imageSize}}
           />
           <Image
@@ -50,7 +50,7 @@ export default function PlanetImageComponent({
             height={398}
             alt=""
             priority
-            className="w-[75px] h-[100px] absolute bottom-0"
+            className="w-[75px] h-[100px] xl:w-[163px] xl:h-[199px] absolute bottom-20 xl:bottom-0"
           />
       </div>
     );

@@ -33,7 +33,7 @@ export default function PlanetNavigationComponent({
       className={`planetNavItem font-spartan text-[9px] text-white tracking-[1.93px] uppercase  h-full flex items-center  
         border border-b-4 border-t-0 border-x-0 md:border-b-0 md:border-1
         md:w-[281px] md:h-[40px] md:border-1 md:border-[#979797] md:text-[9px] ${pageSection == item && colors.hasOwnProperty(planet) ?  `${colors[planet][0]} ${colors[planet][1]}` : 'border-transparent '} md:hover:bg-white md:hover:bg-opacity-50
-        xl:w-full xl:text-[18px]  xl:h-[48px] xl:px-5 cursor-pointer`}
+        xl:w-full xl:text-[18px]  xl:h-[48px] md:px-5 cursor-pointer`}
       onClick={() => {
         setPageSection(item);
       }}
