@@ -50,7 +50,7 @@ export default function PlanetImageComponent({
             height={398}
             alt=""
             priority
-            className="w-[75px] h-[100px] xl:w-[163px] xl:h-[199px] absolute bottom-20 xl:bottom-0"
+            className="w-[163px] h-[199px]  absolute -bottom-2 md:bottom-24 xl:-bottom-0"
           />
       </div>
     );
