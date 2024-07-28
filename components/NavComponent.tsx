@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function NavComponent() {
   const [menuOpen, setMenuOpen] = useState(false);
-
+  const [activeNav, setActiveNav] = useState('earth')
   useEffect(() => {
     setMenuOpen(false);
   }, []);
@@ -54,8 +54,9 @@ export default function NavComponent() {
           </svg>
         </div>
         <div
+          onClick={() => {setActiveNav(key)}}
           className={`w-[80%] font-spartan text-[15px] font-bold leading-[25px] tracking-[1.36px] md:opacity-50 border-t-4 border-opacity-0 hover:xl:border-opacity-100
-        xl:h-full hover:xl:border-t-4 hover:xl:opacity-100 ${colors[key.toLowerCase()][0]} xl:flex xl:justify-center xl:items-center xl:w-full`}
+        xl:h-full hover:xl:border-t-4 hover:xl:opacity-100 ${colors[key.toLowerCase()][0]} xl:flex xl:justify-center xl:items-center xl:w-full ${key == activeNav ? `md:opacity-100` : ''} `}
         >
           {key}
         </div>

@@ -1,11 +1,8 @@
-
 interface PropTypes {
   pageSection: string;
   setPageSection: React.Dispatch<React.SetStateAction<string>>;
   planet: string;
 }
-
-
 
 export default function PlanetNavigationComponent({
   pageSection,
@@ -40,9 +37,7 @@ export default function PlanetNavigationComponent({
     >
       <span className="hidden md:block xl:opacity-50 xl:mr-5">0{key + 1}&nbsp;</span> {item}
     </div>
-
   )
-
 
   return (
     <div className="flex md:flex-col justify-around items-center h-[50px]  border border-x-0 border-y-1 border-[#979797] border-opacity-35 z-19 
