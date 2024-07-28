@@ -1,11 +1,8 @@
-
 interface PropTypes {
   pageSection: string;
   setPageSection: React.Dispatch<React.SetStateAction<string>>;
   planet: string;
 }
-
-
 
 export default function PlanetNavigationComponent({
   pageSection,
@@ -33,16 +30,14 @@ export default function PlanetNavigationComponent({
       className={`planetNavItem font-spartan text-[9px] text-white tracking-[1.93px] uppercase  h-full flex items-center  
         border border-b-4 border-t-0 border-x-0 md:border-b-0 md:border-1
         md:w-[281px] md:h-[40px] md:border-1 md:border-[#979797] md:text-[9px] ${pageSection == item && colors.hasOwnProperty(planet) ?  `${colors[planet][0]} ${colors[planet][1]}` : 'border-transparent '} md:hover:bg-white md:hover:bg-opacity-50
-        xl:w-full xl:text-[18px]  xl:h-[48px] xl:px-5 cursor-pointer`}
+        xl:w-full xl:text-[18px]  xl:h-[48px] md:px-5 cursor-pointer`}
       onClick={() => {
         setPageSection(item);
       }}
     >
       <span className="hidden md:block xl:opacity-50 xl:mr-5">0{key + 1}&nbsp;</span> {item}
     </div>
-
   )
-
 
   return (
     <div className="flex md:flex-col justify-around items-center h-[50px]  border border-x-0 border-y-1 border-[#979797] border-opacity-35 z-19 

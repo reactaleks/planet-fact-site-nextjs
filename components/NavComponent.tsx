@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function NavComponent() {
   const [menuOpen, setMenuOpen] = useState(false);
-
+  const [activeNav, setActiveNav] = useState('earth')
   useEffect(() => {
     setMenuOpen(false);
   }, []);
@@ -16,7 +16,6 @@ export default function NavComponent() {
   };
 
   const navItems = Object.keys(planetData).map((key) => {
-    let planet = key as keyof typeof planetData;
 
     const colors = {
       'earth': [`border-planetColors-earth`, `bg-planetcolors-earth`, `#6D2ED5`],
@@ -27,7 +26,6 @@ export default function NavComponent() {
       'uranus': [`border-planetColors-neptune`, `bg-planetcolors-neptune`, `#2D68F0`],
       'venus': [`border-planetColors-venus`, `bg-planetcolors-venus`, `#EDA249`],
       'mercury': [`border-planetColors-mercury`, `bg-planetcolors-mercury`, `#419EBB`],
-
     } as PlanetColors
     
     return (
@@ -36,7 +34,7 @@ export default function NavComponent() {
         href={`/${key}`}
         onClick={openMenu}
         className={`uppercase cursor-pointer flex items-center w-full h-[65px] mx-auto 
-          border border-x-0 border-t-0 border-b-1  border-opacity-25
+          border border-x-0 border-t-0 border-b-1  border-opacity-50 ${colors[key.toLowerCase()][0]}
           md:justify-center md:border-none `}
       >
         <div className="w-[10%] md:hidden">
@@ -56,15 +54,15 @@ export default function NavComponent() {
           </svg>
         </div>
         <div
-          // style={{ borderColor: `${planetData[planet].planetColour}`}}
-          className={`w-[80%] font-spartan text-[15px] font-bold leading-[25px] tracking-[1.36px] md:opacity-50 
-        xl:h-full hover:xl:border-t-4 hover:xl:opacity-100 ${colors[key.toLowerCase()][0]}  xl:flex xl:justify-center xl:items-center xl:w-full`}
+          onClick={() => {setActiveNav(key)}}
+          className={`w-[80%] font-spartan text-[15px] font-bold leading-[25px] tracking-[1.36px] md:opacity-50 border-t-4 border-opacity-0 hover:xl:border-opacity-100
+        xl:h-full hover:xl:border-t-4 hover:xl:opacity-100 ${colors[key.toLowerCase()][0]} xl:flex xl:justify-center xl:items-center xl:w-full ${key == activeNav ? `md:opacity-100` : ''} `}
         >
           {key}
         </div>
         <div className="w-[10%] md:hidden">
           <svg xmlns="http://www.w3.org/2000/svg" width="6" height="8">
-            <path fill="none" stroke="#FFF" opacity=".4" d="M1 0l4 4-4 4" />
+            <path fill={colors[key.toLowerCase()][2]} stroke="" opacity=".4" d="M1 0l4 4-4 4" />
           </svg>
         </div>
       </Link>
@@ -103,7 +101,7 @@ export default function NavComponent() {
             : "-translate-y-full"
         }`}
       >
-        <div className="w-[327px] md:w-full mx-auto my-auto flex flex-col justify-between md:justify-center text-white md:flex-row ">
+        <div className="w-[327px] h-[80vh] md:w-full md:h-full mx-auto my-auto flex flex-col justify-around md:justify-center text-white md:flex-row ">
           {navItems}
         </div>
       </div>
