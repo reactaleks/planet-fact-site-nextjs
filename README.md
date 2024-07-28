@@ -6,3 +6,4 @@
 - NextJS 14
 - TailwindCSS
 - TypeScript
+- Framer Motion 
